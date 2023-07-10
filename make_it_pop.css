@@ -1,8 +1,21 @@
 body{
     background-color: var(--color-bg-secondary);
 }
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+}
 
-#nonsense {}
+#nonsense {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
 
 #display{
     background-color: var(--color-bg);
