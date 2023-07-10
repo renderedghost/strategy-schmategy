@@ -15,10 +15,11 @@ main {
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
+    background-color: var(--color-bg);
+    font-family: var(--font-serif);
 }
 
 #display{
-    background-color: var(--color-bg);
 }
 
 #generate{
