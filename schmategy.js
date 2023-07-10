@@ -12,6 +12,6 @@ const generateStrategy = () => {
   )} ${randomItem(data.when)}. This will ${randomItem(data.impacts)}.`;
 };
 
-document.getElementById("generate-btn").addEventListener("click", function () {
-  document.getElementById("display-strategy").innerText = generateStrategy();
+document.getElementById("generate").addEventListener("click", function () {
+  document.getElementById("display").innerText = generateStrategy();
 });
