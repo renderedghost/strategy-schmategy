@@ -2,11 +2,9 @@ body{
     background-color: var(--color-bg-secondary);
 }
 
+#nonsense {}
+
 #display{
-
-}
-
-#nonsense{
     background-color: var(--color-bg);
 }
 
