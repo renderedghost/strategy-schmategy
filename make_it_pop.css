@@ -1,7 +1,28 @@
 body{
+    font-size:24px;
+    font-family: var(--font-sans);
+    color: var(--color-text);
     background-color: var(--color-bg-secondary);
+    gap: 1em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
 }
+
+footer,
+header,
 main {
+    margin: 0 auto;
+    max-width: var(--width-content);
+    padding: 0;
+}
+
+footer,
+header,
+main,
+#nonsense {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -10,13 +31,9 @@ main {
 }
 
 #nonsense {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
     background-color: var(--color-bg);
     font-family: var(--font-serif);
+    padding: 1em em;
 }
 
 #display{
