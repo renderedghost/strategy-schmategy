@@ -10,18 +10,26 @@ fetch("topsecret.json")
   });
 
 const generateStrategy = () => {
-  return `To <span class="highlight">${randomItem(
-    data.objectives
-  )}</span> and <span class="highlight">${randomItem(
-    data.objectives
-  )}</span>, we will <span class="highlight">${randomItem(
+  return `To ${randomItem(data.objectives)}, we will ${randomItem(
     data.actions
-  )}</span> <span class="highlight">${randomItem(data.when)}</span>.`;
+  )} ${randomItem(data.when)}.`;
+};
+
+const animateText = async (element, text, interval) => {
+  const words = text.split(" ");
+  let content = "";
+
+  for (const word of words) {
+    content += `${word} `;
+    element.textContent = content;
+    await new Promise((resolve) => setTimeout(resolve, interval));
+  }
 };
 
 const generateAndDisplayStrategy = () => {
-  document.getElementById("display").innerHTML = generateStrategy(); // Changed from innerText to innerHTML.
-  document.getElementById("message-container").style.display = "block";
+  const strategy = generateStrategy();
+  const displayElement = document.getElementById("display");
+  animateText(displayElement, strategy, 100);
 };
 
 document
