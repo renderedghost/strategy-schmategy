@@ -28,6 +28,6 @@ document
   .getElementById("generate")
   .addEventListener("click", generateAndDisplayStrategy);
 
-document.getElementById("contact-btn").addEventListener("click", function () {
-  window.location.href = "mailto:barry@example.com"; // Replace with your email.
+document.getElementById("contact").addEventListener("click", function () {
+  window.location.href = "mailto:barry.m.prendergast@gmail.com";
 });
