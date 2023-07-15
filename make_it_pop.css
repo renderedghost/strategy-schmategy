@@ -1,5 +1,14 @@
+html {
+    font-size: 20px;
+}
+.highlight,
+::selection{
+    color: var(--color-text);
+    background-color: #FFFE0D;
+}
+
 body {
-    font-size: 24px;
+    font-size: 1rem;
     line-height: 1.6;
     font-family: var(--font-sans);
     font-weight: 400;
@@ -13,7 +22,6 @@ body {
     align-items: stretch;
     justify-content: center;
     transition: flex .4s linear, background-color .2s linear, color .2s linear;
-
 }
 
 footer,
@@ -35,21 +43,21 @@ aside {
     flex-wrap: nowrap;
     justify-content: left;
     align-items: stretch;
-    gap: 1em;
+    gap: 1rem;
 }
 
 main {
     background-color: var(--color-bg-secondary);
     width: 66vw;
     max-width: 66vw;
-    padding:4em;
+    padding: 4rem;
 }
 
 aside {
     background-color: var(--color-bg);
     width: 34vw;
     max-width: 34vw;
-    padding: 4em 2em;
+    padding: 4rem 2rem;
 }
 
 h1,
@@ -59,7 +67,7 @@ h4,
 h5 {
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 1.6
 }
@@ -67,18 +75,18 @@ h5 {
 h6 {
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 400
 }
 
 p {
     margin: 0;
-    font-size: 1em
+    font-size: 1rem
 }
 
 a {
     color: #01f;
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 400;
     text-decoration: none
 }
@@ -99,8 +107,8 @@ a:focus-visible {
     background-color: #000cb3;
     border-radius: 2px;
     border: none;
-    padding: .375em .75em;
-    font-size: 1em;
+    padding: .375rem .75rem;
+    font-size: 1rem;
     font-weight: 500;
     transition: box-shadow 80ms ease-in, color 80ms linear, transform 80ms ease-in-out, background-color 80ms linear;
     box-shadow: 0 0 rgba(54, 51, 102, .5)
@@ -166,13 +174,13 @@ a:focus-visible {
 }
 
 #display {
-    font-size: 2.25em;
-    line-height: 1.5em;
+    font-size: 3rem;
+    line-height: 4rem;
     font-weight: 300;
 }
 
 .overline {
-    font-size: 0.75em;
+    
     margin: 0;
     padding: 0;
     text-transform: uppercase;
@@ -180,22 +188,31 @@ a:focus-visible {
     font-weight: 500;
 }
 
+.emphasised {
+    font-family: var(--font-sans);
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 150%;
+    line-height: 2rem;
+}
+
 .link-block {
     display: flex;
-    gap: 1em;
+    gap: 1rem;
     flex-wrap: wrap;
-    flex-direction: column;
-    font-size: 0.825em;
+    flex-direction: row;
+    font-size: 0.825rem;
 }
 
 .bp--divider {
     width: 100%;
     height: 1px;
     background-color: #a9aabf;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .bp--text.xs {
-    font-size: .625em;
+    font-size: .625rem;
 }
