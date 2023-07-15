@@ -107,9 +107,9 @@ a:focus-visible {
     background-color: #000cb3;
     border-radius: 2px;
     border: none;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    font-weight: 500;
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
     transition: box-shadow 80ms ease-in, color 80ms linear, transform 80ms ease-in-out, background-color 80ms linear;
     box-shadow: 0 0 rgba(54, 51, 102, .5)
 }
