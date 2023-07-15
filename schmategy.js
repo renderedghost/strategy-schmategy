@@ -2,7 +2,7 @@ const randomItem = (array) => array[Math.floor(Math.random() * array.length)];
 
 let data;
 
-fetch("topsecret.json")
+fetch("data.json")
   .then((response) => response.json())
   .then((json) => {
     data = json;
