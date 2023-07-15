@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="make_it_pop.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@200;300;400;500;700&family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="tokens.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="make_it_pop.css" />
     <title>Complex Design Strategy Generator</title>
-
-</head>
-<body>
-    <header>
-        <h1>Something here</h1>
-    </header>
+  </head>
+  <body>
     <main>
-        <div id="nonsense">
-            <p id="display"></p>
-        </div>
-        <button id="generate">Generate Strategy</button>
+      <h1 class="overline">Your next design strategy is:</h1>
+      <p id="display"></p>
+      <div class="button-group">
+        <button class="bp--button emphasis-low" id="generate">
+          New Strategy
+        </button>
+      </div>
     </main>
-    <footer>
-        Some Footer
-    </footer>
+    <aside>
+      <p>Don't leave success to chance.</p>
+      <p>
+        If you need a tailored strategy product design approach that drives
+        positive outcomes for your business and your users, talk to Barry.
+      </p>
+      <div class="button-group">
+        <button class="bp--button" id="contact">Contact Barry</button>
+      </div>
+    </aside>
 
     <!-- Script -->
     <script src="schmategy.js"></script>
-</body>
+  </body>
 </html>

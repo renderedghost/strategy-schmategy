@@ -1,44 +1,195 @@
-body{
-    font-size:24px;
-    font-family: var(--font-sans);
-    color: var(--color-text);
-    background-color: var(--color-bg-secondary);
-    gap: 1em;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
-}
+/* span.highlight {
+    text-decoration-line: underline;
+    text-decoration-color: #000cb3;
+    text-decoration-thickness: 2px;
+    text-decoration-style: dotted;
+    text-underline-offset: 0.125em;
+} */
 
-footer,
-header,
-main {
-    margin: 0 auto;
-    max-width: var(--width-content);
-    padding: 0;
+body {
+    font-size: 24px;
+    line-height: 1.6;
+    font-family: var(--font-sans);
+    font-weight: 400;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    height: 100vh;
+    gap: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: center;
+    transition: flex .4s linear, background-color .2s linear, color .2s linear;
+
 }
 
 footer,
 header,
 main,
-#nonsense {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: stretch;
+aside {
+    margin: 0 auto;
+    max-width: var(--width-max);
+    padding: 0;
+
 }
 
-#nonsense {
+footer,
+header,
+main,
+aside
+{
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+justify-content: left;
+align-items: stretch;
+gap: 1em;
+}
+
+main {
     background-color: var(--color-bg);
-    font-family: var(--font-serif);
-    padding: 1em em;
+    width: 66vw;
+    max-width: 66vw;
+    padding: 2em 4em;
 }
 
-#display{
+aside {
+    background-color: var(--color-bg-secondary);
+    width: 34vw;
+    max-width: 34vw;
+    padding: 2em 2em;
 }
 
-#generate{
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.6
+}
+
+h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1em;
+    font-weight: 400
+}
+
+p {
+    margin: 0;
+    font-size: 1em
+}
+
+a {
+    color: #01f;
+    font-size: 1em;
+    font-weight: 400;
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: underline
+}
+
+a:focus-visible {
+    outline-offset: 4px;
+    border-radius: 2px;
+    outline: 4px solid #fbb800
+}
+
+.bp--button {
+    color: #fff;
+    text-align: left;
+    background-color: #000cb3;
+    border-radius: 2px;
+    border: none;
+    padding: .375em .75em;
+    font-size: 1em;
+    font-weight: 500;
+    transition: box-shadow 80ms ease-in, color 80ms linear, transform 80ms ease-in-out, background-color 80ms linear;
+    box-shadow: 0 0 rgba(54, 51, 102, .5)
+}
+
+.bp--button:hover {
+    color: #fff;
+    background-color: #01f;
+    text-decoration: none;
+    transform: scale(1.025);
+    box-shadow: 0 10px 2px -4px rgba(95, 92, 153, .24), 0 2px 3px -2px rgba(54, 51, 102, .5)
+}
+
+.bp--button:active {
+    background-color: #000659;
+    transform: scale(1);
+    box-shadow: 0 2px 1px rgba(54, 51, 102, .5)
+}
+
+.bp--button:focus-visible {
+    outline-offset: 2px;
+    background-color: #01f;
+    border-radius: 1px;
+    outline: 3px solid #fbb800;
+    transform: scale(1.05)
+}
+
+.bp--button.emphasis-low {
+    color: #000cb3;
+    background-color: #e4e5f7
+}
+
+.bp--button.emphasis-low:hover {
+    color: #01f;
+    background-color: #f5f5ff
+}
+
+.bp--button.emphasis-low:active {
+    color: #000cb3;
+    background-color: #d5d7f2
+}
+
+.bp--button.emphasis-low.w--current:hover {
+    color: #01f;
+    background-color: #d1d4ff
+}
+
+.bp--button.primary.mobile {
+    display: none
+}
+
+.bp--button.emphasis-lowest {
+    box-shadow: none;
+    color: #00010d;
+    background-color: transparent
+}
+
+.bp--button.emphasis-lowest:hover {
+    box-shadow: none;
+    color: #01f;
+    background-color: #f5f5ff
+}
+
+.bp--button.emphasis-lowest:active {
+    color: #01f;
+    background-color: #d5d7f2
+}
+
+#display {
+    font-size: 2em;
+    line-height: 1.5em;
+    font-weight: 300;
+}
+
+h1.overline {
+    font-size: 0.75em;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-family: var(--font-sans);
+    font-weight: 600;
 }

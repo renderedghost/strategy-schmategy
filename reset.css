@@ -1,31 +1,5 @@
 /* Based on MVP.css by Andy Brewer https://github.com/andybrewer/mvp */
 
-:root {
-    --active-brightness: 0.85;
-    --border-radius: 5px;
-    --box-shadow: 2px 2px 10px;
-    --color-accent: #118bee15;
-    --color-bg: #fff;
-    --color-bg-secondary: #f5f5ff;
-    --color-link: #01f;
-    --color-secondary: #920de9;
-    --color-secondary-accent: #920de90b;
-    --color-shadow: #f4f4f4;
-    --color-table: #01f;
-    --color-text: #2b2b2b;
-    --color-text-secondary: #000980;
-    --font-sans: 'DM Sans', sans-serif;
-    --font-serif: 'DM Serif Display', serif;
-    --hover-brightness: 1.2;
-    --justify-important: center;
-    --justify-normal: left;
-    --line-height: 1.5;
-    --width-card: 285px;
-    --width-card-medium: 460px;
-    --width-card-wide: 800px;
-    --width-content: 1080px;
-}
-
 /* Layout */
 article aside {
     background: var(--color-secondary-accent);
@@ -47,7 +21,7 @@ footer,
 header,
 main {
     margin: 0 auto;
-    max-width: var(--width-content);
+    max-width: var(--width-max);
     padding: 3rem 1rem;
 }
 
