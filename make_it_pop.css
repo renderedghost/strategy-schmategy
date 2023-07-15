@@ -39,14 +39,14 @@ aside {
 }
 
 main {
-    background-color: var(--color-bg);
+    background-color: var(--color-bg-secondary);
     width: 66vw;
     max-width: 66vw;
     padding:4em;
 }
 
 aside {
-    background-color: var(--color-bg-secondary);
+    background-color: var(--color-bg);
     width: 34vw;
     max-width: 34vw;
     padding: 4em 2em;
@@ -166,7 +166,7 @@ a:focus-visible {
 }
 
 #display {
-    font-size: 2.5em;
+    font-size: 2.25em;
     line-height: 1.5em;
     font-weight: 300;
 }
@@ -177,7 +177,7 @@ a:focus-visible {
     padding: 0;
     text-transform: uppercase;
     font-family: var(--font-sans);
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .link-block {
