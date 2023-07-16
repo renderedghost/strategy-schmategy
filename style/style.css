@@ -93,7 +93,7 @@ a:active {
     background-color: var(--c-link-primary);
     border-radius: var(--border-radius);
     border: none;
-    padding: .5rem .75rem;
+    padding: var(--gap-s) var(--gap);
     margin:0;
     font-size: var(--font-size);
     line-height: var(--line-height-comfortable);
@@ -235,4 +235,8 @@ a:active {
 
 .meta {
     color: var(--c-text-secondary);
+}
+
+.large {
+    font-size: var(--font-size-lx);
 }
