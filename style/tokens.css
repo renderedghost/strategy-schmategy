@@ -2,9 +2,11 @@
 :root {
     /* Core */
     --s-mono-100: hsl(236, 0%, 100%);
-    --s-mono-95: hsl(236, 16%, 98%);
-    --s-mono-70: hsl(236, 16%, 70%);
-    --s-mono-40: hsl(236, 16%, 40%);
+    --s-mono-98: hsl(236, 16%, 98%);
+    --s-mono-96: hsl(236, 16%, 96%);
+    --s-mono-76: hsl(236, 16%, 76%);
+    --s-mono-38: hsl(236, 16%, 38%);
+    --s-mono-24: hsl(236, 16%, 24%);
     --s-mono-0: hsl(236, 16%, 0%);
     --s-blue-dark-2: hsl(236, 100%, 17%);
     --s-blue-dark-1: hsl(236, 100%, 35%);
@@ -14,7 +16,7 @@
     --s-yellow: #fbb800;
     /* Applied */
     --c-bg: var(--s-mono-100);
-    --c-bg-secondary: var(--s-mono-95);
+    --c-bg-secondary: var(--s-mono-98);
     --c-link-primary: var(--s-blue-dark-1);
     --c-link-primary-hover: var(--s-blue);
     --c-link-primary-active: var(--s-blue-dark-2);
@@ -24,8 +26,8 @@
     --c-shadow: #f4f4f4;
     --c-text: var(--s-mono-0);
     --c-text-inverted: var(--s-mono-100);
-    --c-text-secondary: var(--s-mono-40);
-    --c-border:var(--s-mono-70);
+    --c-text-secondary: var(--s-mono-38);
+    --c-border:var(--s-mono-76);
     --c-highlight: var(--s-yellow);
     --box-shadow: 2px 2px 10px;
 }

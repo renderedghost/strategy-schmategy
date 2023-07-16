@@ -145,6 +145,7 @@ a:active {
     font-size: var(--font-size);
     line-height: var(--line-height-compact);
     font-family: var(--font-sans);
+    color: var(--c-text-secondary);
     font-weight: 500;
     text-transform: uppercase;
 }
@@ -185,7 +186,7 @@ a:active {
 }
 
 .context {
-    font-size: var(--font-size);
+    font-size: var(--font-size-s);
 }
 
 .avatar {
@@ -230,4 +231,8 @@ a:active {
 .name {
     line-height: var(--line-height-none);
     font-weight: 600;
+}
+
+.meta {
+    color: var(--c-text-secondary);
 }
