@@ -1,5 +1,5 @@
 html {
-    font-size: 20px;
+    font-size: 18px;
 }
 .highlight,
 ::selection{
@@ -107,8 +107,8 @@ a:focus-visible {
     background-color: #000cb3;
     border-radius: 2px;
     border: none;
-    padding: .5rem 1rem;
-    font-size: 1.5rem;
+    padding: .5rem .75rem;
+    font-size: 1.25rem;
     font-weight: 400;
     transition: box-shadow 80ms ease-in, color 80ms linear, transform 80ms ease-in-out, background-color 80ms linear;
     box-shadow: 0 0 rgba(54, 51, 102, .5)
@@ -174,13 +174,12 @@ a:focus-visible {
 }
 
 #display {
-    font-size: 3rem;
+    font-size: 2.75rem;
     line-height: 4rem;
     font-weight: 300;
 }
 
 .overline {
-    
     margin: 0;
     padding: 0;
     text-transform: uppercase;
@@ -192,7 +191,7 @@ a:focus-visible {
     font-family: var(--font-sans);
     margin: 0;
     padding: 0;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 150%;
     line-height: 2rem;
 }
@@ -202,7 +201,7 @@ a:focus-visible {
     gap: 1rem;
     flex-wrap: wrap;
     flex-direction: row;
-    font-size: 0.825rem;
+    font-size: 0.75rem;
 }
 
 .bp--divider {
