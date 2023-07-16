@@ -1,16 +1,16 @@
 /* Colours */
 :root {
     /* Core */
-    --s-mono-100: #fff;
-    --s-mono-95: #f5f5ff;
-    --s-mono-70: #a9aabf;
-    --s-mono-40: #f5f5ff;
-    --s-mono-0: #000000;
-    --s-blue-dark-2: #000659;
-    --s-blue-dark-1: #000cb3;
-    --s-blue: #0011ff;
-    --s-blue-bright-1: ;
-    --s-blue-bright-2: ;
+    --s-mono-100: hsl(236, 0%, 100%);
+    --s-mono-95: hsl(236, 16%, 98%);
+    --s-mono-70: hsl(236, 16%, 70%);
+    --s-mono-40: hsl(236, 16%, 40%);
+    --s-mono-0: hsl(236, 16%, 0%);
+    --s-blue-dark-2: hsl(236, 100%, 17%);
+    --s-blue-dark-1: hsl(236, 100%, 35%);
+    --s-blue: hsl(236, 100%, 50%);
+    /* --s-blue-bright-1: ;
+    --s-blue-bright-2: ; */
     --s-yellow: #fbb800;
     /* Applied */
     --c-bg: var(--s-mono-100);
