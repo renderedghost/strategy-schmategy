@@ -28,6 +28,7 @@
     --width-content: 1044px;
     --width-max: 100%;
     /* Spaces */
+    --gap-sx: 0.25rem;
     --gap-s: 0.5rem;
     --gap: 1rem;
     --gap-l: 1.5rem;
@@ -53,7 +54,8 @@
     --font-size-lxxxx: 2.75rem;
     --font-size-lxxxxx: 3rem;
     /* Line Height */
-    --line-height-snug: 1.2;
-    --line-height-base: 1.4;
-    --line-height-open: 1.6;
+    --line-height-none: 1;
+    --line-height-compact: 1.2;
+    --line-height-comfortable: 1.4;
+    --line-height-spacious: 1.6;
 }
