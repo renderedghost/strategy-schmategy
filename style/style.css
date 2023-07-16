@@ -7,8 +7,8 @@ body {
     line-height: var(--line-height-spacious);
     font-family: var(--font-sans);
     font-weight: 400;
-    color: var(--color-text);
-    background-color: var(--color-bg);
+    color: var(--c-text);
+    background-color: var(--c-bg);
     height: 100vh;
     gap: 0;
     display: flex;
@@ -21,14 +21,14 @@ body {
 
 .highlight,
 ::selection {
-    color: var(--color-text);
-    background-color: #fbb800;
+    color: var(--c-text);
+    background-color: var(--c-highlight);
 }
 
 *:focus-visible {
     outline-offset: 2px;
     border-radius: var(--border-radius);
-    outline: 3px solid #fbb800
+    outline: 3px solid var(--c-highlight)
 }
 
 footer,
@@ -54,14 +54,14 @@ aside {
 }
 
 main {
-    background-color: var(--color-bg-secondary);
+    background-color: var(--c-bg-secondary);
     width: 66vw;
     max-width: 66vw;
     padding: 4rem;
 }
 
 aside {
-    background-color: var(--color-bg);
+    background-color: var(--c-bg);
     width: 34vw;
     max-width: 34vw;
     padding: 4rem 2rem;
@@ -73,25 +73,24 @@ p {
 }
 
 a {
-    color: #01f;
+    color: var(--c-link-primary);
     font-weight: 400;
-    text-decoration: none
+    text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline
+    color: var(--c-link-primary-hover);
+    text-decoration: underline;
 }
 
-/* a:focus-visible {
-    outline-offset: 4px;
-    border-radius: var(--border-radius);
-    outline: 4px solid #fbb800
-} */
+a:active {
+    color: var(--c-link-primary-active);
+}
 
 .bp--button {
-    color: #fff;
+    color: var(--c-text-inverted);
     text-align: left;
-    background-color: #000cb3;
+    background-color: var(--c-link-primary);
     border-radius: var(--border-radius);
     border: none;
     padding: .5rem .75rem;
@@ -100,72 +99,44 @@ a:hover {
     line-height: var(--line-height-comfortable);
     font-weight: 400;
     transition: box-shadow 80ms ease-in, color 80ms linear, transform 80ms ease-in-out, background-color 80ms linear;
-    box-shadow: 0 0 rgba(54, 51, 102, .5)
+    box-shadow: 0 0 rgba(54, 51, 102, .5);
+    text-decoration: none;
 }
 
 .bp--button:hover {
-    color: #fff;
-    background-color: #01f;
-    text-decoration: none;
+    background-color: var(--c-link-primary-hover);
     transform: scale(1.025);
     box-shadow: 0 10px 2px -4px rgba(95, 92, 153, .24), 0 2px 3px -2px rgba(54, 51, 102, .5)
 }
 
 .bp--button:active {
-    background-color: #000659;
+    background-color: var(--c-link-primary-active);
     transform: scale(1);
-    box-shadow: 0 2px 1px rgba(54, 51, 102, .5)
+    box-shadow: 0 2px 1px rgba(54, 51, 102, .5);
 }
 
-/* .bp--button:focus-visible {
-    outline-offset: 2px;
-    background-color: #01f;
-    border-radius: var(--border-radius);
-    outline: 3px solid #fbb800;
-    transform: scale(1.05)
-} */
-
 .bp--button.emphasis-low {
-    color: #000cb3;
-    background-color: #e4e5f7
+    color: var(--c-link-secondary);
+    background-color: #e4e5f7;
 }
 
 .bp--button.emphasis-low:hover {
-    color: #01f;
-    background-color: #f5f5ff
+    color: var(--c-link-secondary-hover);
+    background-color: var(--s-mono-100);
 }
 
 .bp--button.emphasis-low:active {
-    color: #000cb3;
-    background-color: #d5d7f2
-}
-
-.bp--button.emphasis-low.w--current:hover {
-    color: #01f;
-    background-color: #d1d4ff
-}
-
-.bp--button.emphasis-lowest {
-    box-shadow: none;
-    color: #00010d;
-    background-color: transparent
-}
-
-.bp--button.emphasis-lowest:hover {
-    box-shadow: none;
-    color: #01f;
-    background-color: #f5f5ff
-}
-
-.bp--button.emphasis-lowest:active {
-    color: #01f;
-    background-color: #d5d7f2
+    color: var(--c-link-secondary-active);
+    background-color: #d5d7f2;
 }
 
 #display {
     font-size: var(--font-size-lxxxxx);
-    line-height: var(--line-height-comfortable);
-    font-weight: 300;
+    line-height: var(--line-height-spacious);
+    /* font-weight: 300; */;
+    font-family: var(--font-serif);
+    font-style: italic;
+    margin-bottom: var(--gap-lx);
 }
 
 .overline {
@@ -190,12 +161,8 @@ a:hover {
 .bp--divider {
     width: 100%;
     height: 1px;
-    background-color: var(--color-border);
+    background-color: var(--c-border);
     margin: 0.5rem 0;
-}
-
-.bp--text.xs {
-    font-size: .625rem;
 }
 
 .card {
@@ -206,7 +173,7 @@ a:hover {
     margin: 0;
     padding: var(--gap);
     gap: var(--gap-s);
-    border: 1px solid var(--color-border);
+    border: 1px solid var(--c-border);
     border-radius: var(--border-radius);
 }
 
@@ -237,8 +204,8 @@ a:hover {
     position: absolute;
     font-size: var(--font-size-s);
     line-height: var(--line-height-none);
-    background-color: var(--color-text);
-    color: var(--color-bg);
+    background-color: var(--c-text);
+    color: var(--c-bg);
     padding: var(--gap-s);
     border-radius: var(--border-radius);
     white-space: nowrap;
@@ -262,5 +229,9 @@ a:hover {
 
 .name {
     line-height: var(--line-height-none);
+    font-weight: 500;
+}
+
+.bold {
     font-weight: 500;
 }

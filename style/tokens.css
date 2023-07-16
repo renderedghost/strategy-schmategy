@@ -1,24 +1,38 @@
+/* Colours */
 :root {
-    --active-brightness: 0.85;
-    --border-radius: 3px;
-    --border-radius-circle: 100%;
+    /* Core */
+    --s-mono-100: #fff;
+    --s-mono-95: #f5f5ff;
+    --s-mono-70: #a9aabf;
+    --s-mono-40: #f5f5ff;
+    --s-mono-0: #000000;
+    --s-blue-dark-2: #000659;
+    --s-blue-dark-1: #000cb3;
+    --s-blue: #0011ff;
+    --s-blue-bright-1: ;
+    --s-blue-bright-2: ;
+    --s-yellow: #fbb800;
+    /* Applied */
+    --c-bg: var(--s-mono-100);
+    --c-bg-secondary: var(--s-mono-95);
+    --c-link-primary: var(--s-blue-dark-1);
+    --c-link-primary-hover: var(--s-blue);
+    --c-link-primary-active: var(--s-blue-dark-2);
+    --c-link-secondary: var(--s-blue-dark-1);
+    --c-link-secondary-hover: var(--s-blue);
+    --c-link-secondary-active: var(--s-blue-dark-1);
+    --c-shadow: #f4f4f4;
+    --c-text: var(--s-mono-0);
+    --c-text-inverted: var(--s-mono-100);
+    --c-text-secondary: var(--s-mono-40);
+    --c-border:var(--s-mono-70);
+    --c-highlight: var(--s-yellow);
     --box-shadow: 2px 2px 10px;
-    --color-accent: #118bee15;
-    --color-bg: #fff;
-    --color-bg-secondary: #f5f5ff;
-    --color-link: #01f;
-    --color-secondary: #920de9;
-    --color-secondary-accent: #920de90b;
-    --color-shadow: #f4f4f4;
-    --color-table: #01f;
-    --color-text: #000;
-    --color-text-secondary: #000980;
-    --color-border:#a9aabf;
-    --hover-brightness: 1.2;
 }
 
 /* Layout */
 :root {
+    /* Align */
     --justify-important: center;
     --justify-normal: left;
     /* Sizes */
@@ -34,6 +48,9 @@
     --gap-l: 1.5rem;
     --gap-lx: 2rem;
     --gap-lxx: 4rem;
+    /* Shapes */
+    --border-radius: 3px;
+    --border-radius-circle: 100%;
 }
 
 /* Typography */
