@@ -1,15 +1,10 @@
 html {
-    font-size: 18px;
-}
-.highlight,
-::selection{
-    color: var(--color-text);
-    background-color: #FFFE0D;
+    font-size: var(--font-size-html);
 }
 
 body {
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: var(--font-size);
+    line-height: var(--line-height-open);
     font-family: var(--font-sans);
     font-weight: 400;
     color: var(--color-text);
@@ -22,6 +17,12 @@ body {
     align-items: stretch;
     justify-content: center;
     transition: flex .4s linear, background-color .2s linear, color .2s linear;
+}
+
+.highlight,
+::selection {
+    color: var(--color-text);
+    background-color: #fbb800;
 }
 
 footer,
@@ -43,7 +44,7 @@ aside {
     flex-wrap: nowrap;
     justify-content: left;
     align-items: stretch;
-    gap: 1rem;
+    gap: var(--gap);
 }
 
 main {
@@ -60,33 +61,13 @@ aside {
     padding: 4rem 2rem;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.6
-}
-
-h6 {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 1rem;
-    font-weight: 400
-}
-
 p {
     margin: 0;
-    font-size: 1rem
+    font-size: var(--font-size);
 }
 
 a {
     color: #01f;
-    font-size: 1rem;
     font-weight: 400;
     text-decoration: none
 }
@@ -97,7 +78,7 @@ a:hover {
 
 a:focus-visible {
     outline-offset: 4px;
-    border-radius: 2px;
+    border-radius: var(--border-radius);
     outline: 4px solid #fbb800
 }
 
@@ -105,10 +86,10 @@ a:focus-visible {
     color: #fff;
     text-align: left;
     background-color: #000cb3;
-    border-radius: 2px;
+    border-radius: var(--border-radius);
     border: none;
     padding: .5rem .75rem;
-    font-size: 1.25rem;
+    font-size: var(--font-size);
     font-weight: 400;
     transition: box-shadow 80ms ease-in, color 80ms linear, transform 80ms ease-in-out, background-color 80ms linear;
     box-shadow: 0 0 rgba(54, 51, 102, .5)
@@ -131,7 +112,7 @@ a:focus-visible {
 .bp--button:focus-visible {
     outline-offset: 2px;
     background-color: #01f;
-    border-radius: 1px;
+    border-radius: var(--border-radius);
     outline: 3px solid #fbb800;
     transform: scale(1.05)
 }
@@ -174,44 +155,92 @@ a:focus-visible {
 }
 
 #display {
-    font-size: 2.75rem;
-    line-height: 4rem;
+    font-size: var(--font-size-lxxxxx);
+    line-height: var(--line-height-base);
     font-weight: 300;
 }
 
 .overline {
     margin: 0;
     padding: 0;
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    font-family: var(--font-sans);
+    font-weight: 500;
     text-transform: uppercase;
-    font-family: var(--font-sans);
-    font-weight: 500;
-}
-
-.emphasised {
-    font-family: var(--font-sans);
-    margin: 0;
-    padding: 0;
-    font-weight: 500;
-    font-size: 150%;
-    line-height: 2rem;
 }
 
 .link-block {
     display: flex;
-    gap: 1rem;
+    gap: var(--gap);
     flex-wrap: wrap;
     flex-direction: row;
-    font-size: 0.75rem;
+    font-size: var(--font-size-s);
+    line-height: var(--line-height-snug);
 }
 
 .bp--divider {
     width: 100%;
     height: 1px;
-    background-color: #a9aabf;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    background-color: var(--color-border);
+    margin: 0.5rem 0;
 }
 
 .bp--text.xs {
     font-size: .625rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    margin: 0;
+    padding: var(--gap-l);
+    gap: var(--gap-s);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+}
+
+.context {
+    font-size: var(--font-size);
+}
+
+.avatar {
+    height: 4rem;
+    width: auto;
+    aspect-ratio: auto;
+    border-radius: var(--border-radius-circle);
+}
+
+.tooltip {
+    position: relative;
+    cursor: pointer;
+}
+
+.tooltip-container {
+    position: absolute;
+    font-size: var(--font-size-s);
+    line-height: var(--line-height-snug);
+    background-color: var(--color-text);
+    color: var(--color-bg);
+    padding: var(--gap-s);
+    border-radius: var(--border-radius);
+    white-space: nowrap;
+    z-index: 9999;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.tooltip-container.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--gap);
 }

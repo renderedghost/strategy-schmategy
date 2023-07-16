@@ -121,7 +121,7 @@ nav ul li:hover ul {
 
 nav ul li ul {
     background: var(--color-bg);
-    border: 1px solid var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow) var(--color-shadow);
     display: none;
@@ -176,14 +176,29 @@ h3,
 h4,
 h5,
 h6 {
-    line-height: var(--line-height);
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
 }
 
 h1{
-    font-family: var(--font-serif);
-    font-size: 3em;
-    margin:0;
-    font-weight: bold;
+    font-size: var(--font-size-lx);
+    line-height: var(--line-height-lx);
+}
+
+h2 {
+    font-size: var(--font-size-l);
+    line-height: var(--line-height-l);
+}
+
+h3 {
+    font-size: var(--font-size-m);
+    line-height: var(--line-height-m);
+}
+
+h4 {
+    font-size: var(--font-size);
+    line-height: var(--line-height);
 }
 
 mark {
@@ -255,7 +270,7 @@ button,
 input[type="submit"] {
     border-radius: var(--border-radius);
     display: inline-block;
-    font-size: medium;
+    font-size: var(--font-size)
     font-weight: bold;
     line-height: var(--line-height);
     margin: 0.5rem 0;
